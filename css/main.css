@@ -1,0 +1,101 @@
+* {
+
+	box-sizing	: border-box;
+	margin		: 0;
+	padding		: 0;
+
+}
+
+body {
+
+	background	: #FEFEFE;
+	font-family	: Arial, Helvetica, sans-serif;
+
+}
+
+/* Estilos Generales */
+
+.menu {
+	
+	list-style: none;
+	
+}
+
+.menu li {
+	
+	line-height	: 3rem;
+	position	: relative;
+	
+}
+
+.menu li ul {
+	
+	position: absolute;
+	
+}
+
+.menu li a {
+	
+	text-decoration	: none;
+	color			: #ddd;
+	display			: block;
+	padding			: 0 2.5em;
+	transition		: .5s;
+	
+}
+
+.menu li a:hover {
+
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+/* Primer Nivel */
+nav > ul {
+	
+	background-color: #333;
+	display			: table;
+	width			: 100%;
+	
+}
+
+nav > ul > li {
+	
+	float: left;
+	
+}
+
+/* Segundo Nivel */
+.menu li ul li {
+	
+	background-color: #222;
+	width			: 225px;
+	max-height		: 0;
+	overflow		: hidden;
+	transition		: all .5s;
+	list-style		: none;
+	
+}
+
+nav > ul > li > ul {
+	
+	top: 100%;
+	
+}
+
+.menu li:hover > ul > li {
+
+	max-height	: 500px;
+	overflow	: visible;
+
+}
+
+/* Tercer Nivel */
+.menu li ul li ul {
+	
+	left	: 100%;
+	top		: 0;
+	
+}
+
+
